@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+    <h1>Status Header</h1>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.enable_button').click(function() {
+                $.post('/enable', function(data, status) {
+                    $('.system_status').html(data);
+                });
+            });
+
+            $('.disable_button').click(function() {
+                $.post('/disable', function(data, status) {
+                    $('.system_status').html(data);
+                });
+            });
+
+            $('.show_button').click(function() {
+                $.post('/get_status', function(data, status) {
+                    $('.system_status').html(data);
+                });
+            });
+        });
+    </script>
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-11">
+            <label class="col-sm-2 control-label system_status" for="formGroupInputLarge">Status</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+            <button class="btn btn-default btn-lg enable_button" type="button">Enable</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+            <button class="btn btn-default btn-lg disable_button" type="button">Disable</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+            <button class="btn btn-default btn-lg show_button" type="button">Show Status</button>
+        </div>
+    </div>
+</body>
+</html>
