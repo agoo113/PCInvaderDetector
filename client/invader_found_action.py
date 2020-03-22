@@ -1,5 +1,4 @@
 import os
-import cv2
 import ctypes
 import win32com.client as win32
 import win32ui
@@ -31,10 +30,14 @@ def on_invader_found():
     ctypes.windll.user32.LockWorkStation()
 
 
-def on_invader_found_with_image(image):
-    print('Invader found. Lock screen')
-    culprit_image_path = 'culprit.png'
-    cv2.imwrite(culprit_image_path, image)
-    # email_culprit(os.path.join(os.getcwd(), culprit_image_path))
-    ctypes.windll.user32.LockWorkStation()
-    play_audio(os.path.join('audio', 'invader_found_alarm.wav'))
+try:
+    import cv2
+    def on_invader_found_with_image(image):
+        print('Invader found. Lock screen')
+        culprit_image_path = 'culprit.png'
+        cv2.imwrite(culprit_image_path, image)
+        # email_culprit(os.path.join(os.getcwd(), culprit_image_path))
+        ctypes.windll.user32.LockWorkStation()
+        play_audio(os.path.join('audio', 'invader_found_alarm.wav'))
+except:
+    pass
