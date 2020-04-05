@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="invader_found_alarm_data" version="1.3.0" audacityversion="2.3.0" sel0="3.5884166667" sel1="20.8467291667" vpos="0" h="0.0000000000" zoom="73.1051074538" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf57.56.101"/>
+		<tag name="major_brand" value="mp42"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="compatible_brands" value="isommp42"/>
+	</tags>
+	<wavetrack name="invader_found" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="3.58841667" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="276133">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080d9.au" len="138066" min="-0.542958" max="0.382508" rms="0.079814"/>
+				</waveblock>
+				<waveblock start="138066">
+					<simpleblockfile filename="e0808a0f.au" len="138067" min="-0.627536" max="0.336555" rms="0.066239"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="3">
+				<controlpoint t="3.251050744229" val="1.500000000000"/>
+				<controlpoint t="3.305766483516" val="1.500000000000"/>
+				<controlpoint t="4.058107898715" val="1.485915422440"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="9.34118750" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="276133">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080d9.au" len="138066" min="-0.542958" max="0.382508" rms="0.079814"/>
+				</waveblock>
+				<waveblock start="138066">
+					<simpleblockfile filename="e0808a0f.au" len="138067" min="-0.627536" max="0.336555" rms="0.066239"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="2.737311947642" val="1.485915422440"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="15.09395833" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="276133">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080d9.au" len="138066" min="-0.542958" max="0.382508" rms="0.079814"/>
+				</waveblock>
+				<waveblock start="138066">
+					<simpleblockfile filename="e0808a0f.au" len="138067" min="-0.627536" max="0.336555" rms="0.066239"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="2.893840957323" val="1.500000000000"/>
+			</envelope>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Nuclear alarm siren sound effect NUKE" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1058688">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808244.au" len="262144" min="-0.702384" max="0.767155" rms="0.208104"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808109.au" len="262144" min="-0.802542" max="0.813491" rms="0.257797"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e08083a1.au" len="262144" min="-0.761171" max="0.793596" rms="0.245625"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e080842c.au" len="262144" min="-0.777156" max="0.837355" rms="0.251713"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e0808caa.au" len="10112" min="-0.124386" max="0.137157" rms="0.033893"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="3.706991336706" val="0.225352108479"/>
+			</envelope>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Nuclear alarm siren sound effect NUKE" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1058688">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e75.au" len="262144" min="-0.793601" max="0.820475" rms="0.22799"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808fdc.au" len="262144" min="-0.82619" max="0.835612" rms="0.307102"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e08083cf.au" len="262144" min="-0.797771" max="0.852284" rms="0.260566"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0808e48.au" len="262144" min="-0.838715" max="0.821181" rms="0.266233"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e080887c.au" len="10112" min="-0.120869" max="0.139838" rms="0.032905"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="3.706991336706" val="0.225352108479"/>
+			</envelope>
+		</waveclip>
+	</wavetrack>
+</project>

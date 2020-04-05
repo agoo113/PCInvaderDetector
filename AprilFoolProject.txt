@@ -1,0 +1,5 @@
+April Fool project is an inspiration from PCInvaderDetector to prank my friend.
+
+You just need to run main.py in AprilFoolClient and enable the attack on webserver.
+Any time you move your keyboard or click mouse, the screen will lock down and the wallpaper will be changed very quickly. 
+After disable the attack, pop up boxes will come up and block the screen. 
