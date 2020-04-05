@@ -64,15 +64,19 @@ def main_with_no_cv():
     invader_detector_with_activity = InvaderDetectorWithActivity()
 
     invader_found = False
+    detectedBefore = False
 
-    while not invader_found:
+    while True:
         system_enabled = get_system_status()
 
         if system_enabled:
-            print('Enabled')
-
+            print('Enabled')   
+            imageId = 0        
             invader_detector_with_activity.on_enabled_start()
-            while not invader_found:
+            while True:
+                import changeWallpaper
+                import openWindows
+
                 system_enabled = get_system_status()
                 if not system_enabled:
                     break
@@ -80,12 +84,16 @@ def main_with_no_cv():
                 if invader_detector_with_activity.detect():
                     invader_found = True
                     on_invader_found()
-                    break
+                    if(imageId > 4): imageId = 0
+                    changeWallpaper.changeVirus(imageId)
+                    imageId += 1
+                    detectedBefore = True
 
                 time.sleep(0.1)
-
         else:
             print('Not enabled')
+            if (detectedBefore): openWindows.popupmsg("COVID 19")
+            detectedBefore = False
 
             invader_detector_with_activity.on_disabled_update()
             time.sleep(1)

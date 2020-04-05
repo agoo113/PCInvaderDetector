@@ -27,7 +27,8 @@ def email_culprit(image_path):
 
 
 def on_invader_found():
-    ctypes.windll.user32.LockWorkStation()
+
+    ctypes.windll.user32.LockWorkStation() #lock screen
 
 
 try:
